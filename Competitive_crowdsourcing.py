@@ -1,9 +1,9 @@
-def competitiveCrowdsourcing():
-    M = int(input("请输入任务数量："))        #任务分解数
-    k = int(input("请输入努力程度货币化系数："))                                   #货币化系数
+def competitiveCrowdsourcing(M, k, eff):
+    M = int(M)        #任务分解数
+    k = int(k)                                   #货币化系数
     b = 1                                   #风险系数
-    arr = input("请输入接包方在任务每个阶段的努力程度，用空格隔开：")
-    e = [int(n) for n in arr.split()]       #努力程度假定值
+    # arr = input("请输入接包方在任务每个阶段的努力程度，用空格隔开：")
+    e = [int(n) for n in eff.split()]       #努力程度假定值
     mu = [10, 0]            #随机影响参数
     sigma = [1,1]           
     x = [0]*M 

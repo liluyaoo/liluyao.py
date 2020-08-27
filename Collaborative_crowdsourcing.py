@@ -1,10 +1,10 @@
-def collaborativeCrowdsourcing():
-    N = int(input("请输入合作数量："))     #合作数量
+def collaborativeCrowdsourcing(N, k, Qbar):
+    # N = int(input("请输入合作数量："))     #合作数量
     x0 = 1.2    #相互协作系数
     rho = 0.1   #风险系数
     sigma = 0.1
-    k = int(input("请输入努力货币化系数："))    #努力货币化系数  原数值为20
-    Qbar = float(input("请输入任务总估价："))   
+    # k = int(input("请输入努力货币化系数："))    #努力货币化系数  原数值为20
+    # Qbar = float(input("请输入任务总估价："))   
     a = Qbar * 0.3 / N  #固定薪资
     Sbar = 300  #接包方能接受的最低薪资
     if Sbar > a:
